@@ -51,7 +51,7 @@
   <div class="col-2 bg-dark text-danger d-none d-md-block" style="width: 93px; border-radius: 0px;">
       <ul class="wd-kanbas-navigation list-group">
         <li class="list-group-item">
-          <a href="account.html">
+          <a href="profile.html">
             <i class="fa-solid fa-circle-user fa-inverse fa-2x bar" style="color: white;"></i><br/>
             Account</a>
         </li>
@@ -61,7 +61,7 @@
             Dashboard</a>
         </li>
         <li class="list-group-item active">
-          <a href="courses.html">
+          <a href="home.html">
             <i class="fa-solid fa-book fa-2x bar"></i><br/>
             Courses</a>
         </li>
@@ -177,14 +177,16 @@
     </textarea>
     <br /> <br />
 
-    <div style="text-align: center; width: 100%;">
+    <div style="width: 100%;">
     <div class="row" style="width: 75%; margin-left: 12%;">
-        <div class="col-sm-5" style="text-align: right;">
+        <div class="col-sm-3" style="text-align: right;">
             <label for="points" class="col-form-label">Points</label> <br/><br/>
             <label for="assG" class="col-form-label">Assignment Group</label> <br/><br/>
-            <label for="disG" class="col-form-label">Display Grade as</label> <br/>
+            <label for="disG" class="col-form-label">Display Grade as</label> <br/><br/><br/>
+            <label for="subT" class="col-form-label">Submission Type</label> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <label for="aT" class="col-form-label">Assign</label> <br/>
         </div>
-        <div class="col-sm-7">
+        <div class="col-sm-7" style="text-align: left;">
             <input class="form-control" id="points" type="number" min="0" max="100" value="100"/> <br/>
             <select class="form-select form-control" id="assG">
                 <option selected>ASSIGNMENTS</option>
@@ -193,69 +195,59 @@
                 <option selected>Percentage</option>
             </select>
             <label class="form-label"><input type="checkbox" class="form-check-input"/>Do not count this assignment towards the final grade</label> <br/>
+            <div class="list-group">
+                <div class="list-group-item">
+                    <select class="form-select form-control" id="subT">
+                        <option selected>Online</option>
+                    </select>
+                    <label class="form-label" style="font-weight: bold;">Online Entry Options</label> <br/>
+                    <label class="form-label"><input type="checkbox" name="entry" class="form-check-input"/>Text Entry</label> <br/>
+                    <label class="form-label"><input type="checkbox" name="entry" class="form-check-input"/>Website URL</label> <br/>
+                    <label class="form-label"><input type="checkbox" name="entry" class="form-check-input"/>Media Recordings</label> <br/>
+                    <label class="form-label"><input type="checkbox" name="entry" class="form-check-input"/>Student Annotation</label> <br/>
+                    <label class="form-label"><input type="checkbox" name="entry" class="form-check-input"/>File Uploads</label> <br/>
+                </div>
+            </div>
+            <br/>
+
+            <div class="list-group">
+            <div class="list-group-item">
+            <label class="form-label">Assign to</label>
+            <input class="form-control" id="aT" type="text" value="Everyone"/>
+            <br/>
+            <label class="form-label" for="due">Due</label>
+            <br />
+            <input class="form-control" id="due" type="date" value="2021-01-01"/>
+            <br/>
+            <div class="row">
+            <div class="col-sm-6" style="text-align: left;">
+                <label class="col-form-label"for="av">Available from</label>
+                <br />
+                <input class="form-control" id="av" type="date" value="2021-01-01"/>
+                <br/>
+            </div>
+            <div class="col-sm-6" style="text-align: left;">
+                <label class="col-form-label" for="until">Until</label>
+                <br />
+                <input class="form-control" id="until" type="date"/>
+                <br/>
+            </div>
+            </div>
+            </div>
+            <div class="row list-group-item">
+                <button class="btn btn-light" disabled><i class="fa-regular fa-plus"></i>Add</button>
+            </div>
+            </div>
+            </div>
         </div>
+        <br/><hr>
+        <div class="float-end">
+            <button class="btn btn-light">Cancel</button>
+            <button class="btn btn-danger">Save</button>
+        </div>
+        <label class="form-label"><input type="checkbox" class="form-check-input" style="margin-right: 5px;"/>Notify users that this content has changed</label> <br/>
+        <br/><hr>
     <br/> <br/>
-
-    
-    <br/> <br/>
-
-    <label for="subT">Submission Type</label> <br/>
-    <select id="subT" style="width: 150px;">
-        <option selected>Online</option>
-    </select>
-    <br/> <br/>
-
-    <label>Online Entry Options</label> <br/>
-    <label><input type="checkbox" name="entry"/>Text Entry</label> <br/>
-    <label><input type="checkbox" name="entry"/>Website URL</label> <br/>
-    <label><input type="checkbox" name="entry"/>Media Recordings</label> <br/>
-    <label><input type="checkbox" name="entry"/>Student Annotation</label> <br/>
-    <label><input type="checkbox" name="entry"/>File Uploads</label> <br/>
-    <br/>
-
-    <label for="subA">Submission Attempts</label> <br/>
-    <select id="subA" style="width: 90px;">
-        <option selected>Unlimited</option>
-    </select>
-    <br/> <br/>
-
-    <label for="plagR">Plagiarism Review</label> <br/>
-    <select id="plagR" style="width: 90px;">
-        <option selected>None</option>
-    </select>
-    <br/> <br/>
-
-    <label>Group Assignment</label> <br/>
-    <label><input type="checkbox" name="groupA"/>This is a group assignment</label> <br/>
-    <br/>
-
-    <label>Peer Reviews</label> <br/>
-    <label><input type="checkbox" name="pr"/>Require Peer Reviews</label> <br/>
-    <br/>
-
-    <label for="aT">Assign<br/>Assign to</label>
-    <br />
-    <input id="aT" type="text" value="Everyone"/>
-    <br/> <br/>
-
-    <label for="due">Due</label>
-    <br />
-    <input id="due" type="date" value="2021-01-01"/>
-    <br/> <br/>
-
-    <label for="av">Available from</label>
-    <br />
-    <input id="av" type="date" value="2021-01-01"/>
-    <br/> <br/>
-
-    <label for="until">Until</label>
-    <br />
-    <input id="until" type="date" value="2021-01-01"/>
-    <br/> <br/>
-    </div>
-    </div>
-    
-    <button>Cancel</button><button>Save</button>
 </form>
 
 </div>
