@@ -1,0 +1,91 @@
+.wd-course-navigation-solo {
+  /* background-color: aqua; */
+  width: 100%;
+  text-align: left;
+  
+}
+
+.wd-course-navigation-solo li {
+  list-style-type: none;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.wd-course-navigation-solo li a {
+  color: red;
+  text-decoration: none;
+  margin-bottom: 15px;
+  margin-top: 0px;
+}
+
+.wd-course-navigation {
+    /* background-color: aqua; */
+    width: 190px;
+    padding: 0px;
+    margin-left: 20px;
+    text-align: left;
+    
+  }
+  
+  .wd-course-navigation li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    width: 120px;
+  }
+  
+  .wd-course-navigation li.active {
+    border-left: 1px black solid;
+  }
+  
+  .wd-course-navigation li a {
+    color: red;
+    text-decoration: none;
+    margin-bottom: 15px;
+    margin-top: 0px;
+  }
+
+
+ul.wd-kanbas-navigation.list-group {
+  border-radius: 0px;
+  text-align: center;
+}
+ul.wd-kanbas-navigation .list-group-item {
+  border: none;
+  background-color: black;
+  margin: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 80px;
+  margin-bottom: 5px;
+}
+
+ul.wd-kanbas-navigation .list-group-item.active {
+  color: red;
+  background-color: white;
+  border: none;
+  border-left: 2px solid white;
+  width: 81px;
+}
+
+ul.wd-kanbas-navigation a {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}
+
+ul.wd-kanbas-navigation .list-group-item.active a {
+  color: red;
+  background-color: white;
+  border: white;
+}
+
+i.bar {
+    color: red;
+    margin-bottom: 5px;
+}
+
+.list-group-item a {
+    padding: 5px;
+}

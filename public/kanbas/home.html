@@ -3,175 +3,662 @@
 <head>
    <meta charset="UTF-8">
    <title>Title</title>
+
+   <link href="nav.css"
+    rel="stylesheet"/>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet">
+
 </head>
-<body>
-<table width="100%">
-    <tbody>
-        <tr>
-            <td valign="top">
-                <ul>
-                    <li>
-                      <a href="account.html">Account</a>
-                    </li>
-                    <li>
-                      <a href="#">Dashboard</a>
-                    </li>
-                    <li>
-                      <a href="courses.html">Courses</a>
-                    </li>
-                    <li>
-                      <a href="#">Calendar</a>
-                    </li>
-                    <li>
-                        <a href="#">Inbox</a>
-                    </li>
-                    <li>
-                        <a href="#">History</a>
-                    </li>
-                    <li>
-                        <a href="#">Studio</a>
-                    </li>
-                    <li>
-                        <a href="#">Commons</a>
-                    </li>
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                </ul>
-            </td>
-            <td valign="top">
-                <ul>
-                    <li>
-                      <a href="#">Home</a>
-                    </li>
-                    <li>
-                      <a href="#">Modules</a>
-                    </li>
-                    <li>
-                      <a href="#">Piazza</a>
-                    </li>
-                    <li>
-                      <a href="#">Zoom Meetings</a>
-                    </li>
-                    <li>
-                      <a href="assignments.html">Assignments</a>
-                    </li>
-                    <li>
-                      <a href="#">Quizzes</a>
-                    </li>
-                    <li>
-                      <a href="grades.html">Grades</a>
-                    </li>
-                    <li>
-                      <a href="#">People</a>
-                    </li>
-                    <li>
-                      <a href="#">Panopto Video</a>
-                    </li>
-                    <li>
-                      <a href="#">Discussions</a>
-                    </li>
-                    <li>
-                      <a href="#">Announcements</a>
-                    </li>
-                    <li>
-                      <a href="#">Pages</a>
-                    </li>
-                    <li>
-                        <a href="#">Files</a>
-                    </li>
-                    <li>
-                    <a href="#">Rubrics</a>
-                    </li>
-                    <li>
-                    <a href="#">Outcomes</a>
-                    </li>
-                    <li>
-                    <a href="#">Collaborations</a>
-                    </li>
-                    <li>
-                    <a href="#">Syllabus</a>
-                    </li>
-                    <li>
-                    <a href="#">Settings</a>
-                    </li>
-                </ul>
-            </td>
-            <td valign="top">
-                <button>Collapse All</button>
-                <button>View Progress</button>
-                <select style="width: 85px;">
-                    <option selected>Publish All</option>
-                    <option>Publish All modules and items</option>
-                    <option>Publish modules only</option>
-                    <option>UnPublish All</option>
-                </select>
-                <button>Module</button>
+<body style="font-family: calibri">
 
-                <ul>
-                    <li>Week 0 - INTRO</li>
-                    <ul>
-                        <li>LEARNING OBJECTIVES</li>
-                        <ul>
-                            <li>Introduction to the course</li>
-                            <li>Learn what is Web Development</li>
-                            <li>Creating a development environment</li>
-                            <li>Creating a Web Application</li>
-                            <li>Getting started with the 1st assignment</li>
-                        </ul>
-                        <li>READING</li>
-                        <ul>
-                            <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                            <li>Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>
-                        </ul>
-                        <li>SLIDES</li>
-                        <ul>
-                            <li><a href="#">Introduction to Web Development Links to an external site.</a></li>
-                            <li><a href="#">Creating an HTTP server with Node.js Links to an external site.</a></li>
-                            <li><a href="#">Creating a React Application Links to an external site.</a></li>
-                        </ul>
-                    </ul>
-                    <li>Week 1 - HTML</li>
-                    <ul>
-                        <li>LEARNING OBJECTIVES</li>
-                        <ul>
-                            <li>Learn how to create user interfaces with HTML</li>
-                            <li>Keep working on assignment 1</li>
-                            <li>Deploy the assignment to Netlify</li>
-                        </ul>
-                        <li>READING</li>
-                        <ul>
-                            <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                            <li>Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>
-                        </ul>
-                    </ul>
-                </ul>
-            </td>
-            <td valign="top">
-                <h2>Course Status</h2>
-                <button>Unpublish</button>
-                <button>Published</button>
-                <ul>
-                    <li><a href="#">Import Existing Content</a></li>
-                    <li><a href="#">Import From Commons</a></li>
-                    <li><a href="#">Choose Home Page</a></li>
-                    <li><a href="#">View Course Stream</a></li>
-                    <li><a href="#">New Announcement</a></li>
-                    <li><a href="#">New Analytics</a></li>
-                    <li><a href="#">View Course Notifications</a></li>
-                </ul>
+<div class="row">
+  <div class="col-2 bg-dark d-none d-md-block" style="width:93px; border-radius: 0px;">
+    <ul class="wd-kanbas-navigation list-group">
+      <li class="list-group-item">
+        <img src="../../images/NU.png" width="80%" height="80%">
+      </li>
+    </ul>
+  </div>
+  <div class="col-10 d-none d-md-block">
+    <br/>
+    <button class="btn btn-light float-end"><i class="fa-solid fa-glasses" style="margin-right: 5px;"></i>Student View</button>
+      <ul class="breadcrumb">
+        <i class="fa-solid fa-bars fa-1x bar" style="margin-right: 20px; margin-left: 20px;"></i>
+        <li class="breadcrumb-item"><a href="dashboard.html" style="color: red; text-decoration: none;">CS4550.12631.20340 </a></li>
+        <li class="breadcrumb-item active"><a href="#" style="color: black; text-decoration: none;"> > Home</a></li>
+      </ul>
+    <hr>
+  </div>
+  <div class="col-12 d-md-none" style="background-color: black;">
+    <br/>
+    <button class="btn btn-dark float-end"><a href="courseNav.html"><i class="fa-solid fa-angle-down" style="margin-right: 5px; color:white;"></i></a></button>
+    <button class="btn btn-dark float-end"><i class="fa-solid fa-glasses" style="margin-right: 5px;"></i></button>
 
-                <h2>Comming Up</h2>
-                <a href="#">View Calendar</a>
-                <ul>
-                    <li><a href="#">Lecture CS4550.12631.202410 Sep 7 at 11:45am</a></li>
-                    <li><a href="#">Lecture CS4550.12631.202410 Sep 11 at 11:45am</a></li>
-                    <li><a href="#">CS5610 06 SP23 Lecture Sep 11 at 6pm</a></li>
-                </ul>
-            </td>
-        </tr>
-    </tbody>
-</table>
+    <button class="btn btn-dark"><a href="kanbasNav.html"><i class="fa-solid fa-bars" style="margin-left: 5px; color:white;"></i></a></button>
+
+      <ul class="breadcrumb" style="margin-left: 200px;">
+        <li class="breadcrumb-item"><a href="dashboard.html" style="text-decoration: none; color: white;">CS4550.12631.20340 </a></li>
+        <li class="breadcrumb-item active"><a href="#" style="text-decoration: none; color: white;"> > Home</a></li>
+      </ul>
+    <hr>
+  </div>
+<div class="row">
+<div class="col-2 bg-dark text-danger d-none d-md-block" style="width: 93px; border-radius: 0px;">
+    <ul class="wd-kanbas-navigation list-group">
+      <li class="list-group-item">
+        <a href="account.html">
+          <i class="fa-solid fa-circle-user fa-inverse fa-2x bar" style="color: white;"></i><br/>
+          Account</a>
+      </li>
+      <li class="list-group-item">
+        <a href="dashboard.html">
+          <i class="fa-solid fa-gauge fa-inverse fa-2x bar"></i><br/>
+          Dashboard</a>
+      </li>
+      <li class="list-group-item active">
+        <a href="courses.html">
+          <i class="fa-solid fa-book fa-2x bar"></i><br/>
+          Courses</a>
+      </li>
+      <li class="list-group-item">
+        <a href="#">
+          <i class="fa-solid fa-calendar-days fa-inverse fa-2x bar"></i><br/>
+          Calendar</a>
+      </li>
+      <li class="list-group-item">
+          <a href="#">
+            <i class="fa-solid fa-inbox fa-inverse fa-2x bar"></i><br/>
+            Inbox</a>
+      </li>
+      <li class="list-group-item">
+          <a href="#">
+            <i class="fa-solid fa-clock fa-inverse fa-2x bar"></i><br/>
+            History</a>
+      </li>
+      <li class="list-group-item">
+          <a href="#">
+            <i class="fa-solid fa-computer fa-inverse fa-2x bar"></i><br/>
+            Studio</a>
+      </li>
+      <li class="list-group-item">
+          <a href="#">
+            <i class="fa-solid fa-arrow-right-from-bracket fa-inverse fa-2x bar"></i><br/>
+            Commons</a>
+      </li>
+      <li class="list-group-item">
+          <a href="#">
+            <i class="fa-solid fa-circle-question fa-inverse fa-2x bar"></i><br/>
+            Help</a>
+      </li>
+  </ul>
+</div>
+<div class="col-2 text-wrap d-none d-md-block">
+  <ul class="wd-course-navigation">
+    <li class="active">
+      <a href="home.html">Home</a>
+    </li>
+    <li>
+      <a href="#">Modules</a>
+    </li>
+    <li>
+      <a href="#">Piazza</a>
+    </li>
+    <li>
+      <a href="#">Zoom Meetings</a>
+    </li>
+    <li>
+      <a href="assignments.html">Assignments</a>
+    </li>
+    <li>
+      <a href="#">Quizzes</a>
+    </li>
+    <li>
+      <a href="grades.html">Grades</a>
+    </li>
+    <li>
+      <a href="#">People</a>
+    </li>
+    <li>
+      <a href="#">Panopto Video</a>
+    </li>
+    <li>
+      <a href="#">Discussions</a>
+    </li>
+    <li>
+      <a href="#">Announcements</a>
+    </li>
+    <li>
+      <a href="#">Pages</a>
+    </li>
+    <li>
+        <a href="#">Files</a>
+    </li>
+    <li>
+    <a href="#">Rubrics</a>
+    </li>
+    <li>
+    <a href="#">Outcomes</a>
+    </li>
+    <li>
+    <a href="#">Collaborations</a>
+    </li>
+    <li>
+    <a href="#">Syllabus</a>
+    </li>
+    <li>
+    <a href="#">Settings</a>
+    </li>
+</ul>
+</div>
+
+
+
+<div class="col-12  d-md-none">
+  <div class="flex-row float-end">
+    <div class="float-end">
+      <button class="btn btn-light">Collapse All</button>
+      <button class="btn btn-light">View Progress</button>
+      <button class="btn btn-light" style="width: 200px;">
+        <i class="fa-regular fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+
+        <select class="dropdown" style="width: 150px;">
+          <option selected class="dropdown-item">
+              Publish All
+          </option>
+        </select>
+      </button>
+      <button class="btn btn-danger"><i class="fa-solid fa-plus" style="margin-right: 5px;"></i> Module</button>
+      <button class="btn btn-light"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 50px;">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-secondary">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        Week 0 - INTRO
+        <i class="fa-solid fa-ellipsis-vertical float-end"></i>
+        <i class="fa-solid fa-plus float-end" style="margin-right: 10px; margin-left: 10px;"></i>
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        LEARNING OBJECTIVES
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px;">Introduction to the course</a>
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        READING
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px;">Full Stack Developer - Chapter 1 - Introduction</a>
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        RESOURCES
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px; text-decoration: none; color: red;">
+        <i class="fa-solid fa-link" style="color: green;"></i>
+        <a href="https://www.youtube.com/@WebDevTV" style="color:red; text-decoration:none;">YouTube</a>
+        <i class="fa-solid fa-arrow-right-from-bracket" style="color: red;"></i>  
+      </a>
+      <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+    </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px; text-decoration: none; color: red;">
+        <i class="fa-solid fa-link" style="color: green;"></i>
+        <a href="https://docs.google.com/document/d/17zKwilu-A8UOaYJnj0GTqs7gTOFziHm4NeC72wZBh-c/edit#heading=h.nrqys0cujbbr" style="color:red; text-decoration:none;">
+          Project</a>
+        <i class="fa-solid fa-arrow-right-from-bracket" style="color: red;"></i>  
+      </a>
+      <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+    </li>
+    </ul>
+
+    <ul class="list-group" style="margin-top: 20px;">
+      <li class="list-group-item list-group-item-secondary">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        Week 1 - HTML
+        <i class="fa-solid fa-ellipsis-vertical float-end"></i>
+        <i class="fa-solid fa-plus float-end" style="margin-right: 10px; margin-left: 10px;"></i>
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        LEARNING OBJECTIVES
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px;">Introduction to the HTML</a>
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        READING
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px;">Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</a>
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        RESOURCES
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px; text-decoration: none; color: red;">
+        <i class="fa-solid fa-link" style="color: green;"></i>
+        <a href="https://www.w3schools.com/html/" style="color:red; text-decoration:none;">W3 Schools</a>
+        <i class="fa-solid fa-arrow-right-from-bracket" style="color: red;"></i>  
+      </a>
+      <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+    </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px; text-decoration: none; color: red;">
+        <i class="fa-solid fa-link" style="color: green;"></i>
+        <a href="https://docs.google.com/document/d/1XBs0y5hBKsPUmnvEJNfQZz9aibrVIvOwuGfLF51YCos/edit#heading=h.nbfs8x9iykbg" style="color:red; text-decoration:none;">
+          Assignment 1</a>
+        <i class="fa-solid fa-arrow-right-from-bracket" style="color: red;"></i>  
+      </a>
+      <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+    </li>
+    </ul>
+  </div>
+  </div>
+
+<div class="col-8 d-none d-md-block d-lg-block d-xl-none">
+  <div class="flex-row float-end">
+    <div class="float-end">
+      <button class="btn btn-light">Collapse All</button>
+      <button class="btn btn-light">View Progress</button>
+      <button class="btn btn-light" style="width: 200px;">
+        <i class="fa-regular fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+
+        <select class="dropdown" style="width: 150px;">
+          <option selected class="dropdown-item">
+              Publish All
+          </option>
+        </select>
+      </button>
+      <button class="btn btn-danger"><i class="fa-solid fa-plus" style="margin-right: 5px;"></i> Module</button>
+      <button class="btn btn-light"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 50px;">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-secondary">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        Week 0 - INTRO
+        <i class="fa-solid fa-ellipsis-vertical float-end"></i>
+        <i class="fa-solid fa-plus float-end" style="margin-right: 10px; margin-left: 10px;"></i>
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        LEARNING OBJECTIVES
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px;">Introduction to the course</a>
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        READING
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px;">Full Stack Developer - Chapter 1 - Introduction</a>
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        RESOURCES
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px; text-decoration: none; color: red;">
+        <i class="fa-solid fa-link" style="color: green;"></i>
+        <a href="https://www.youtube.com/@WebDevTV" style="color:red; text-decoration:none;">YouTube</a>
+        <i class="fa-solid fa-arrow-right-from-bracket" style="color: red;"></i>  
+      </a>
+      <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+    </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px; text-decoration: none; color: red;">
+        <i class="fa-solid fa-link" style="color: green;"></i>
+        <a href="https://docs.google.com/document/d/17zKwilu-A8UOaYJnj0GTqs7gTOFziHm4NeC72wZBh-c/edit#heading=h.nrqys0cujbbr" style="color:red; text-decoration:none;">
+          Project</a>
+        <i class="fa-solid fa-arrow-right-from-bracket" style="color: red;"></i>  
+      </a>
+      <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+    </li>
+    </ul>
+
+    <ul class="list-group" style="margin-top: 20px;">
+      <li class="list-group-item list-group-item-secondary">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        Week 1 - HTML
+        <i class="fa-solid fa-ellipsis-vertical float-end"></i>
+        <i class="fa-solid fa-plus float-end" style="margin-right: 10px; margin-left: 10px;"></i>
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        LEARNING OBJECTIVES
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px;">Introduction to the HTML</a>
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        READING
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px;">Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</a>
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        RESOURCES
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px; text-decoration: none; color: red;">
+        <i class="fa-solid fa-link" style="color: green;"></i>
+        <a href="https://www.w3schools.com/html/" style="color:red; text-decoration:none;">W3 Schools</a>
+        <i class="fa-solid fa-arrow-right-from-bracket" style="color: red;"></i>  
+      </a>
+      <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+    </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px; text-decoration: none; color: red;">
+        <i class="fa-solid fa-link" style="color: green;"></i>
+        <a href="https://docs.google.com/document/d/1XBs0y5hBKsPUmnvEJNfQZz9aibrVIvOwuGfLF51YCos/edit#heading=h.nbfs8x9iykbg" style="color:red; text-decoration:none;">
+          Assignment 1</a>
+        <i class="fa-solid fa-arrow-right-from-bracket" style="color: red;"></i>  
+      </a>
+      <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+    </li>
+    </ul>
+  </div>
+  </div>
+
+<div class="col-6 d-none d-xl-block">
+  <div class="flex-row float-end">
+    <div class="float-end">
+      <button class="btn btn-light">Collapse All</button>
+      <button class="btn btn-light">View Progress</button>
+      <button class="btn btn-light" style="width: 200px;">
+        <i class="fa-regular fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+
+        <select class="dropdown" style="width: 150px;">
+          <option selected class="dropdown-item">
+              Publish All
+          </option>
+        </select>
+      </button>
+      <button class="btn btn-danger"><i class="fa-solid fa-plus" style="margin-right: 5px;"></i> Module</button>
+      <button class="btn btn-light"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 50px;">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-secondary">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        Week 0 - INTRO
+        <i class="fa-solid fa-ellipsis-vertical float-end"></i>
+        <i class="fa-solid fa-plus float-end" style="margin-right: 10px; margin-left: 10px;"></i>
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        LEARNING OBJECTIVES
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px;">Introduction to the course</a>
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        READING
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px;">Full Stack Developer - Chapter 1 - Introduction</a>
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        RESOURCES
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px; text-decoration: none; color: red;">
+        <i class="fa-solid fa-link" style="color: green;"></i>
+        <a href="https://www.youtube.com/@WebDevTV" style="color:red; text-decoration:none;">YouTube</a>
+        <i class="fa-solid fa-arrow-right-from-bracket" style="color: red;"></i>  
+      </a>
+      <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+    </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px; text-decoration: none; color: red;">
+        <i class="fa-solid fa-link" style="color: green;"></i>
+        <a href="https://docs.google.com/document/d/17zKwilu-A8UOaYJnj0GTqs7gTOFziHm4NeC72wZBh-c/edit#heading=h.nrqys0cujbbr" style="color:red; text-decoration:none;">
+          Project</a>
+        <i class="fa-solid fa-arrow-right-from-bracket" style="color: red;"></i>  
+      </a>
+      <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+    </li>
+    </ul>
+
+    <ul class="list-group" style="margin-top: 20px;">
+      <li class="list-group-item list-group-item-secondary">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        Week 1 - HTML
+        <i class="fa-solid fa-ellipsis-vertical float-end"></i>
+        <i class="fa-solid fa-plus float-end" style="margin-right: 10px; margin-left: 10px;"></i>
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        LEARNING OBJECTIVES
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px;">Introduction to the HTML</a>
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        READING
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px;">Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</a>
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        RESOURCES
+        <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+      </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px; text-decoration: none; color: red;">
+        <i class="fa-solid fa-link" style="color: green;"></i>
+        <a href="https://www.w3schools.com/html/" style="color:red; text-decoration:none;">W3 Schools</a>
+        <i class="fa-solid fa-arrow-right-from-bracket" style="color: red;"></i>  
+      </a>
+      <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+    </li>
+      <li class="list-group-item">
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray;"></i>
+        <i class="fa-solid fa-ellipsis-vertical" style="color: gray; margin-right: 5px;"></i>
+        <a style="margin-left: 20px; text-decoration: none; color: red;">
+        <i class="fa-solid fa-link" style="color: green;"></i>
+        <a href="https://docs.google.com/document/d/1XBs0y5hBKsPUmnvEJNfQZz9aibrVIvOwuGfLF51YCos/edit#heading=h.nbfs8x9iykbg" style="color:red; text-decoration:none;">
+          Assignment 1</a>
+        <i class="fa-solid fa-arrow-right-from-bracket" style="color: red;"></i>  
+      </a>
+      <i class="fa-solid fa-inverse fa-circle-check float-end" style="color:green; margin-bottom:10px"></i>
+    </li>
+    </ul>
+  </div>
+  </div>
+
+  <div class="col-3 float-end d-none d-xl-block">
+    <div class="row float-end">
+    <div class="float-end">
+      <a style="font-size: 20px;">Course Status</a> <br/>
+      <button class="btn btn-light"><i class="fa-solid fa-ban"></i>
+        Unpublish</button>
+      <button class="btn btn-success" disabled>
+        <i class="fa-solid fa-inverse fa-circle-check"></i>Published</button>
+      <br/> <br/>
+      
+      <button class="btn btn-light" style="text-align:left; width: 100%;"><i class="fa-solid fa-file-import" style="margin-right: 5px;"></i> Import Existing Content</button>
+      <button class="btn btn-light" style="text-align:left; width: 100%;"><i class="fa-solid fa-bullseye"></i><i class="fa-solid fa-arrow-right" style="margin-right: 5px;"></i> Import from Commons</button>
+      <button class="btn btn-light" style="text-align:left; width: 100%;"><i class="fa-solid fa-location-crosshairs" style="margin-right: 5px;"></i> Choose Home Page</button>
+      <button class="btn btn-light" style="text-align:left; width: 100%;"><i class="fa-solid fa-chart-simple" style="margin-right: 5px;"></i> View Course Stream</button>
+      <button class="btn btn-light" style="text-align:left; width: 100%;"><i class="fa-solid fa-bullhorn" style="margin-right: 5px;"></i> New Announcement</button>
+      <button class="btn btn-light" style="text-align:left; width: 100%;"><i class="fa-solid fa-chart-simple" style="margin-right: 5px;"></i> New Analytics</button>
+      <button class="btn btn-light" style="text-align:left; width: 100%;"><i class="fa-solid fa-bell" style="margin-right: 5px;"></i> View Course Notifications</button>
+
+      <br/> <br/>
+
+      <ul class="list-group-flush" style="margin-top: 20px;">
+        <li class="list-group-item list-group-item-light">
+          <h6>To Do</h6>
+        </li>
+        <li class="list-group-item list-group-item-light" style="color: red;">
+          <i class="fa-solid fa-xmark float-end" style="color: gray;"></i>
+          <span class="badge bg-danger badge-pill">1</span>
+          <a>Grade A1 - ENV + HTML</a><br/>
+          <a style="color: gray; font-size: 13px; margin-left: 25px;">100 points - Sep 18 at 11:59pm</a>
+        </li>
+      </ul>
+
+      <ul class="list-group-flush" style="margin-top: 20px;">
+        <li class="list-group-item list-group-item-light">
+          <p class="float-end" style="color: red; margin-left: 5px; font-size: 10px;">View Calendar</p>
+          <i class="fa-regular fa-calendar float-end"></i>
+          <h6>Coming Up</h6>
+        </li>
+        <li class="list-group-item list-group-item-light border-0">
+          <i class="fa-regular fa-calendar"></i>
+          <a style="color: red; margin-left: 10px;">Lecture</a><br/>
+          <a style="color: gray; font-size: 13px; margin-left: 25px;">CS4550.12631.20340</a> <br/>
+          <a style="color: gray; font-size: 13px; margin-left: 25px;">Sep 11 at 11:45am</a>
+        </li>
+        <li class="list-group-item list-group-item-light border-0">
+          <i class="fa-regular fa-calendar"></i>
+          <a style="color: red; margin-left: 10px;">CS5610 06 SP23 Lecture</a><br/>
+          <a style="color: gray; font-size: 13px; margin-left: 25px;">CS4550.12631.20340</a> <br/>
+          <a style="color: gray; font-size: 13px; margin-left: 25px;">Sep 11 at 6pm</a>
+        </li>
+        <li class="list-group-item list-group-item-light">
+          <a style="color: red; font-size: 13px; margin-left: 10px;">12 more in the next week...</a> <br/>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
 
 </body>
 </html>

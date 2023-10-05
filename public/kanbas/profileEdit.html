@@ -3,73 +3,230 @@
 <head>
    <meta charset="UTF-8">
    <title>Title</title>
+
+   <link href="nav.css"
+   rel="stylesheet"/>
+   <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+   <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet">
+
+</head>
+<body style="font-family: calibri">
+
+<div class="row">
+  <div class="col-2 bg-dark" style="width:93px; border-radius: 0px;">
+    <ul class="wd-kanbas-navigation list-group">
+      <li class="list-group-item">
+        <img src="../../images/NU.png" width="80%" height="80%">
+      </li>
+    </ul>
+  </div>
+  <div class="col-10">
+    <br/>
+    <span>
+      <i class="fa-solid fa-bars fa-1x bar" style="margin-right: 20px; margin-left: 20px;"></i>
+      <a style="font-size: large;">Jose Annunziato's Profile</a>
+    </span>
+    <hr>
+  </div>
+</div>
+<div class="row">
+  <div class="col-2 bg-dark text-danger" style="width: 93px; border-radius: 0px;">
+      <ul class="wd-kanbas-navigation list-group">
+        <li class="list-group-item active">
+          <a href="account.html">
+            <i class="fa-solid fa-circle-user fa-inverse fa-2x bar" style="color: gray;"></i><br/>
+            Account</a>
+        </li>
+        <li class="list-group-item">
+          <a href="dashboard.html">
+            <i class="fa-solid fa-gauge fa-inverse fa-2x bar"></i><br/>
+            Dashboard</a>
+        </li>
+        <li class="list-group-item">
+          <a href="courses.html">
+            <i class="fa-solid fa-book fa-2x bar"></i><br/>
+            Courses</a>
+        </li>
+        <li class="list-group-item">
+        <a href="#">
+          <i class="fa-solid fa-calendar-days fa-inverse fa-2x bar"></i><br/>
+          Calendar</a>
+        </li>
+        <li class="list-group-item">
+          <a href="#">
+            <i class="fa-solid fa-inbox fa-inverse fa-2x bar"></i><br/>
+            Inbox</a>
+        </li>
+        <li class="list-group-item">
+          <a href="#">
+            <i class="fa-solid fa-clock fa-inverse fa-2x bar"></i><br/>
+            History</a>
+        </li>
+        <li class="list-group-item">
+          <a href="#">
+            <i class="fa-solid fa-computer fa-inverse fa-2x bar"></i><br/>
+            Studio</a>
+        </li>
+        <li class="list-group-item">
+          <a href="#">
+            <i class="fa-solid fa-arrow-right-from-bracket fa-inverse fa-2x bar"></i><br/>
+            Commons</a>
+        </li>
+        <li class="list-group-item">
+          <a href="#">
+            <i class="fa-solid fa-circle-question fa-inverse fa-2x bar"></i><br/>
+            Help</a>
+        </li>
+    </ul>
+  </div>
+  <div class="col-2 text-wrap">
+    <ul class="wd-course-navigation">
+    <li>
+      <a href="#">Notifications</a>
+    </li>
+    <li class="active">
+      <a href="profile.html">Profile</a>
+    </li>
+    <li>
+      <a href="#">Files</a>
+    </li>
+    <li>
+      <a href="#">Settings</a>
+    </li>
+    <li>
+      <a href="#">ePortfolios</a>
+    </li>
+    <li>
+      <a href="#">Shared Content</a>
+    </li>
+    <li>
+      <a href="#">The Hub</a>
+    </li>
+    <li>
+      <a href="#">Qwickly Course Tools</a>
+    </li>
+    <li>
+      <a href="#">Global Announcements</a>
+    </li>
+  </ul>
+  </div>
+  <div class="col-8">
+    <div class="fa-stack fa-5x" style="color: lightgray;">
+      <i class="fa-solid fa-user fa-stack-1x"></i>
+      <i class="fa-regular fa-circle fa-stack-2x"></i>
+    </div>
+    <div class="float-end">
+      <a href="profile.html"><button class="btn btn-light">      <i class="fa-solid fa-pencil"></i>
+        Cancel Editing</button></a>
+    </div>
+
+    <form action="profile.html">
+
+      <label for="name" class="form-label">Name:*</label>
+      <input id="name" class="form-control" type="text" value="Jose Annunziato"/>
+      <label for="pro" class="form-label">Pronouns:</label>
+      <select id="pro" class="form-select" style="width: 90px;">
+          <option selected>None</option>
+      </select>
+      <label for="title" class="form-label">Title:</label>
+      <input id="title" class="form-control" type="text"/>
+      <br/>
+
+      <h3>Contact</h3>
+      <p>No registered services, you can add some on the <a href="#" style="color: red; text-decoration: none;">settings</a> page.</p>
+      <br/>
+      <h3>Biography</h3>
+      <textarea cols="50" rows="5" class="form-control">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
+      <br/>
+      <h3>Links</h3>
+      <div class="row" style="text-align: center;">
+        <div class="col-3">
+          <label for="lt" class="form-label"><a style="margin-bottom: 4px;">Title</a></label>
+        </div>
+        <div class="col-4">
+          <label for="url" class="form-label"><a style="margin-bottom: 4px;">URL</a></label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3" style="margin-right: 0px; padding-right: 0px;">
+          <input id="lt" class="form-control" type="text" value="YouTube"/>
+        </div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-1" style="margin: 0px; padding: 0px; padding-top: 5px;">
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+            <div class="col-10" style="margin-left: 0px; padding-left: 0px;">
+              <input id="url" class="form-control" type="text" value="https://www.youtube.com"/>
+            </div>
+            <div class="col-1" style="margin: 0px; padding: 0px; padding-top: 5px;">
+              <i class="fa-solid fa-xmark" style="color: red;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <button class="btn btn-light" disabled>Add another link</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="float-end">
+            <button class="btn btn-light">Cancel</button>
+            <button class="btn btn-danger">Save Profile</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+
+  <ul>
+          <li><a href="#">YouTube Links to an external site.</a></li>
+      </ul>
+      <br/>
+      
+      <table>
+          <tbody>
+              <tr>
+                  <td valign="top">
+                      <label for="lt"><h4 style="text-align: center; margin-bottom: 4px;">Title</h4></label>
+                      <input id="lt" type="text" value="YouTube"/>
+                  <td valign="bottom">
+                      <p><br/>--></p>
+                  </td>
+                  </td>
+                  <td valign="top">
+                  </td>
+                  <td valign="middle"><br/><br/><a href="#">Remove</a></td>
+              </tr>
+          </tbody>
+      </table>
+
+      <button>Add another link</button> <br/>
+      <button>Cancel</button>
+      <a href="profile.html"><button>Save Profile</button></a><br/>
+      <button>Edit Profile</button>
+      <a href="profile.html"><button>Cancel Editing</button></a>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
 </head>
 <body>
-<table width="100%">
-    <tbody>
-        <tr>
-            <td valign="top">
-                <ul>
-                    <li>
-                      <a href="account.html">Account</a>
-                    </li>
-                    <li>
-                      <a href="#">Dashboard</a>
-                    </li>
-                    <li>
-                      <a href="courses.html">Courses</a>
-                    </li>
-                    <li>
-                      <a href="#">Calendar</a>
-                    </li>
-                    <li>
-                        <a href="#">Inbox</a>
-                    </li>
-                    <li>
-                        <a href="#">History</a>
-                    </li>
-                    <li>
-                        <a href="#">Studio</a>
-                    </li>
-                    <li>
-                        <a href="#">Commons</a>
-                    </li>
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                </ul>
-            </td>
-            <td valign="top">
-                <ul>
-                    <li>
-                      <a href="#">Notifications</a>
-                    </li>
-                    <li>
-                      <a href="profile.html">Profile</a>
-                    </li>
-                    <li>
-                      <a href="#">Files</a>
-                    </li>
-                    <li>
-                      <a href="#">Settings</a>
-                    </li>
-                    <li>
-                      <a href="#">ePortfolios</a>
-                    </li>
-                    <li>
-                      <a href="#">Shared Content</a>
-                    </li>
-                    <li>
-                      <a href="#">The Hub</a>
-                    </li>
-                    <li>
-                      <a href="#">Qwickly Course Tools</a>
-                    </li>
-                    <li>
-                      <a href="#">Global Announcements</a>
-                    </li>
-                </ul>
-            </td>
+
             <td valign="top">
                 <h1>Jose Annunziato</h1>
                 <form action="profile.html"></form>
