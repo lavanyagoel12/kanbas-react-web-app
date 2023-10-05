@@ -169,28 +169,34 @@
 
 <form action="assignments.html">
 
-<input type="text" value="A1 - ENV + HTML"/>
+    <label class="form-label" for="it">Assignment Name</label><br/>
+    <input class="form-control" id="it" type="text" value="A1 - ENV + HTML" style="width: 100%;"/>
     <br /> <br />
 
-    <textarea cols="25" rows="5">This is the assignment description.
+    <textarea cols="25" rows="5" style="width: 100%;" class="form-control">This is the assignment description.
     </textarea>
     <br /> <br />
 
-    <label for="points">Points</label>
-    <br />
-    <input id="points" type="number" min="0" max="100" value="100"/>
+    <div style="text-align: center; width: 100%;">
+    <div class="row" style="width: 75%; margin-left: 12%;">
+        <div class="col-sm-5" style="text-align: right;">
+            <label for="points" class="col-form-label">Points</label> <br/><br/>
+            <label for="assG" class="col-form-label">Assignment Group</label> <br/><br/>
+            <label for="disG" class="col-form-label">Display Grade as</label> <br/>
+        </div>
+        <div class="col-sm-7">
+            <input class="form-control" id="points" type="number" min="0" max="100" value="100"/> <br/>
+            <select class="form-select form-control" id="assG">
+                <option selected>ASSIGNMENTS</option>
+            </select> <br/>
+            <select class="form-select form-control" id="disG">
+                <option selected>Percentage</option>
+            </select>
+            <label class="form-label"><input type="checkbox" class="form-check-input"/>Do not count this assignment towards the final grade</label> <br/>
+        </div>
     <br/> <br/>
 
-    <label for="assG">Assignment Group</label> <br/>
-    <select id="assG" style="width: 120px;">
-        <option selected>ASSIGNMENTS</option>
-    </select>
-    <br/> <br/>
-
-    <label for="disG">Display Grade as</label> <br/>
-    <select id="disG" style="width: 90px;">
-        <option selected>Percentage</option>
-    </select>
+    
     <br/> <br/>
 
     <label for="subT">Submission Type</label> <br/>
@@ -246,6 +252,8 @@
     <br />
     <input id="until" type="date" value="2021-01-01"/>
     <br/> <br/>
+    </div>
+    </div>
     
     <button>Cancel</button><button>Save</button>
 </form>
