@@ -1,0 +1,19 @@
+.tableNameCol {
+    color:red;
+    text-align: left;
+}
+
+.table-striped.tableNameCol {
+    color:red;
+    text-align: left;
+}
+
+.subs {
+    font-size: 13px;
+    color: gray;
+    text-decoration: none;
+}
+
+table {
+    text-decoration-color:purple;
+}

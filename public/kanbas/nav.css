@@ -37,6 +37,7 @@
   
   .wd-course-navigation li.active {
     border-left: 1px black solid;
+    color: black;
   }
   
   .wd-course-navigation li a {
@@ -44,6 +45,10 @@
     text-decoration: none;
     margin-bottom: 15px;
     margin-top: 0px;
+  }
+
+  .wd-course-navigation li.active a {
+    color: black;
   }
 
 
@@ -88,4 +93,8 @@ i.bar {
 
 .list-group-item a {
     padding: 5px;
+}
+
+.breadcrumb {
+  --bs-breadcrumb-divider: '>';
 }
