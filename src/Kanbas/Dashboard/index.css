@@ -1,0 +1,25 @@
+.card-div {
+    width:250px;
+    margin-right:30px;
+    margin-bottom:30px;
+}
+.icon-div {
+    height: 100px;
+}
+.dots {
+    color: white;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.card-heading {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    text-overflow: ellipsis;
+    width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.card-text.override-ct{
+    font-size: small;
+}

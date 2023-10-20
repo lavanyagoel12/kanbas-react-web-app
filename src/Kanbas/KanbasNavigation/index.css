@@ -1,0 +1,107 @@
+.wd-course-navigation-solo {
+    /* background-color: aqua; */
+    width: 100%;
+    text-align: left;
+  }
+  
+  .wd-course-navigation-solo li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    width: 100%;
+  }
+  
+  .sololia {
+    color: red;
+    text-decoration: none;
+    margin-bottom: 15px;
+    margin-top: 0px;
+  }
+  
+  .wd-course-navigation {
+      /* background-color: aqua; */
+      width: 120px;
+      padding: 0px;
+      margin: 0px;
+      text-align: left;
+      border-radius: 0px;
+      background-color: white;
+    }
+    
+    .wd-course-navigation li {
+      list-style-type: none;
+      margin: 0px;
+      padding: 5px;
+      width: 120px;
+      border-radius: 0px;
+      background-color: white;
+    }
+
+    .wd-course-navigation .list-group-item.active li {
+      border-left: 1px black solid;
+      color: black;
+    }
+
+    ul.wd-course-navigation.list-group {
+      border-radius: 0px;
+    }
+
+    ul.wd-course-navigation .list-group-item.active {
+      background-color: white;
+    }
+  
+  ul.wd-kanbas-navigation.list-group {
+    border-radius: 0px;
+    text-align: center;
+    background-color: black;
+  }
+  ul.wd-kanbas-navigation .list-group-item {
+    border: none;
+    background-color: black;
+    margin: 0px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 80px;
+    margin-bottom: 5px;
+  }
+  
+  ul.wd-kanbas-navigation .list-group-item.active {
+    color: red;
+    background-color: white;
+    border: none;
+    border-left: 2px solid white;
+    width: 81px;
+  }
+  
+  ul.wd-kanbas-navigation a {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+  }
+  
+  ul.wd-kanbas-navigation .list-group-item.active a {
+    color: red;
+    background-color: white;
+    border: white;
+  }
+  
+  .bar {
+      color: red;
+      margin-bottom: 5px;
+  }
+  
+  .list-group-item.active .gray {
+    color: gray;
+  }
+
+  .list-group-item a {
+      padding: 5px;
+  }
+
+  .list-group {
+    background-color: white;
+  }
+
+  .breadcrumb {
+    --bs-breadcrumb-divider: '>';
+  }
