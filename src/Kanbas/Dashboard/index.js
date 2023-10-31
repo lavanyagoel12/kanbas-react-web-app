@@ -10,7 +10,7 @@ function Dashboard({courses, course, setCourse, addNewCourse, deleteCourse, upda
   return (
     <div style={{fontFamily: "calibri"}}>
       <h1>Dashboard</h1>
-      <h5>Published Courses (7)</h5>
+      <h5>Published Courses ({courses.length})</h5>
         <hr style={{marginBottom: "30px"}}></hr>
         <h5>Course</h5>
         <div className="d-flex">
