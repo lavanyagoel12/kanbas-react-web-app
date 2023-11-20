@@ -8,7 +8,6 @@ function EncodingParametersInURLs() {
   const [result, setResult] = useState(0);
   const API_BASE = process.env.REACT_APP_API_BASE;
   const A5_URL = `${API_BASE}/a5`;
-  console.log(API_BASE);
   
   const fetchSum = async (a, b) => {
     const response = await
