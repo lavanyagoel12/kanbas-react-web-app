@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,13 +9,39 @@ import {
   deleteModule,
   updateModule,
   setModule,
+  setModules,
 } from "./modulesReducer";
+import * as client from "./client";
 
 function ModuleList() {
   const { courseId } = useParams();
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    client.findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );
+  }, [courseId]);
+
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
+
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+
+  const handleAddModule = () => {
+    client.createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
 
   return (
     <>
@@ -52,11 +78,11 @@ function ModuleList() {
         </div>
         <div className="col-6 float-end">
           <br/><br/><br/>
-          <button onClick={() => dispatch(addModule({ ...module, course: courseId }))}
+          <button onClick={handleAddModule}
           className="btn btn-success float-end"
           style={{height:"50px", verticalAlign:"bottom"}}>
             Add</button>
-          <button onClick={() => dispatch(updateModule(module))}
+          <button onClick={handleUpdateModule}
           className="btn btn-info float-end"
           style={{height:"50px", verticalAlign:"bottom", marginRight:"5px"}}>
                 Update
@@ -76,7 +102,7 @@ function ModuleList() {
             <FontAwesomeIcon icon={faCircleCheck} className="float-end" style={{color:"green", marginBottom:"10px"}}/>
             <p>{module.description}</p>
             <button
-              onClick={() => dispatch(deleteModule(module._id))}
+              onClick={() => handleDeleteModule(module._id)}
               className="float-end btn btn-danger">
               Delete
             </button>
